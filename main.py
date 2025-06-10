@@ -13,7 +13,7 @@ for i in range(4):
 
 deck.distribute_cards(players)
 
-
+#Ckeck to see if i am gettign results till here
 for player in players:
     print(f"\n{player.name} has {len(player.cards)} cards:")
     for card in player.cards:
