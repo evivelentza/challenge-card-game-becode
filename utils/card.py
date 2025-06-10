@@ -43,4 +43,6 @@ class Deck:
 
 deck = Deck()
 deck.fill_deck()
-deck.show_deck()
+deck.show_deck()for i in range(4):
+            player = Player(name=f"Player {i+1}")
+            self.players.append(player)
