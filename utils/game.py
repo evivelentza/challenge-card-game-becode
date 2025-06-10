@@ -5,7 +5,7 @@ class Board():
     def __init__(self):
         self.players = []
         for i in range (4):
-            player = Player(name = f"Player {i+1}")
+            player = Player(name=f"Player {i+1}")
             self.players.append(player)
         self.turn_count = 0
         self.active_cards = []
@@ -18,10 +18,11 @@ class Board():
         deck.shuffle()
         deck.distribute_cards(self.players)
 
-#randomly pick a Card in cards.
+#randomly pick a Card from their hand. Play itm delete it from hand.
 #Add the Card to the Player's history.
 #Print: {PLAYER_NAME} {TURN_COUNT} played: {CARD_NUMBER} {CARD_SYMBOL_ICON}.
 #Return the Card.
+    
 
     def play_turn(self):
         for player in self.players:

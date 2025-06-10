@@ -18,8 +18,3 @@ for player in players:
     print(f"\n{player.name} has {len(player.cards)} cards:")
     for card in player.cards:
         print(f" - {card.value} of {card.icon} ({card.color})")
-
-
-if __name__ == "__main__":
-    board = Board()
-    board.start_game()
