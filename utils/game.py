@@ -1,4 +1,4 @@
-from utils.card import Deck
+from utils.deck import Deck
 from utils.player import Player
 
 class Board():

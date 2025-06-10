@@ -7,6 +7,4 @@ class Card(Symbol):
     def __init__(self, color: str, icon: str, value: str):
         super().__init__(color, icon)
         self.value = value
-    
-
 
