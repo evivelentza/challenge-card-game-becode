@@ -1,22 +1,11 @@
 from utils.game import Board
-from utils.player import Player
-from utils.deck import Deck
 
-deck = Deck()
-deck.fill_deck()
-deck.shuffle()
+def main() -> None:
+    game = Board()
+    game.start_game()
 
-players = []
-for i in range(4):
-    player = Player(name=f"Player {i+1}")
-    players.append(player)
+if __name__ == "__main__":
+    main()
 
-deck.distribute_cards(players)
-
-#Ckeck to see if i am gettign results till here
-for player in players:
-    print(f"\n{player.name} has {len(player.cards)} cards:")
-    for card in player.cards:
-        print(f" - {card.value} of {card.icon} ({card.color})")
 
     

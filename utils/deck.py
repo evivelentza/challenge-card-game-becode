@@ -29,8 +29,8 @@ class Deck:
     
 
     def distribute_cards(self, players):
-        while len(self.cards) > 0:
+        while self.cards:
             for player in players:
-               if len(self.cards) > 0:
-                   card_to_give = self.cards.pop()
-                   player.cards.append(card_to_give)
+               if self.cards:
+                    player.cards.append(self.cards.pop())
+                    player.number_of_cards = len(player.cards)

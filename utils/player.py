@@ -5,10 +5,10 @@ import random
 class Player:
     def __init__(self, name):
         self.name = name
-        self.cards = []      
+        self.cards: list[Card] = []      
         self.turn_count = 0
         self.number_of_cards = 0
-        self.history = [] 
+        self.history: list[Card] = [] 
 
 #now we need a loop to be activated during the game. The player if he has cars on hand to be able to play a random card and this card to not be on his hands afterwards/
 #If he doesnt have cards anymore a message will be returned.
