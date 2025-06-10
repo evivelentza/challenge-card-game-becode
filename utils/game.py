@@ -4,7 +4,7 @@ from utils.player import Player
 
 class Board:
     def __init__(self):
-        self.players = = [Player(f"Player {i+1}") for i in range(4)]
+        self.players = [Player(f"Player {i+1}") for i in range(4)]
         self.turn_count = 0
         self.active_cards = []
         self.history_cards = []
