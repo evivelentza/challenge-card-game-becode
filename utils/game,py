@@ -5,7 +5,7 @@ class Board():
     def __init__(self):
         self.players = []
         for i in range (4):
-            player = Player(name = "Player {i+1}")
+            player = Player(name = f"Player {i+1}")
             self.players.append(player)
         self.turn_count = 0
         self.active_cards = []
