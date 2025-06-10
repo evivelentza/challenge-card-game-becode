@@ -33,10 +33,12 @@ class Deck:
             print(f"{card.value} of {card.icon} ({card.color})")
     
 
-    def distribute_cards(self, player = List:[Player]):
-        card_for_player = random.choice(self_cards)
-        self_cards.remove(card_for_player)
-
+    def distribute_cards(self, players):
+        while len(self.cards) > 0:
+            for player in players:
+               if len(self.cards) > 0:
+                   card_to_give = self.cards.pop()
+                   player.cards.append(card_to_give)
 
 
 deck = Deck()
