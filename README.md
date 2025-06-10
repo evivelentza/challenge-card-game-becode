@@ -1,4 +1,4 @@
-# 🃏 Card Game – OOP Practice in Python
+# 🃏 Card Game, OOP Practice in Python
 
 A simple card game simulation built to practice Object-Oriented Programming in Python.
 
