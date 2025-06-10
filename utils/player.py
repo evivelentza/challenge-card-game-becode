@@ -1,6 +1,7 @@
 from utils.card import Card
 import random
 
+#Creating a player having all the attributes from challenge, info on what cards he has at hands, how many are they, turns, and history of played cards
 class Player:
     def __init__(self, name):
         self.name = name
@@ -9,11 +10,9 @@ class Player:
         self.number_of_cards = 0
         self.history = [] 
 
-#player_list = []
-
-#for i in range(4):
-#    player = Player()
-#    player_list.append(player)
+#now we need a loop to be activated during the game. The player if he has cars on hand to be able to play a random card and this card to not be on his hands afterwards/
+#If he doesnt have cards anymore a message will be returned.
+#The card will be added to the list of history for this player and the turn should be +1. A message is printed in the end after he played.
 
     def play(self):
 

@@ -2,6 +2,11 @@
 import random
 from utils.player import Player
 from utils.card import Card
+
+#I created a way to add all 52 cards in a list "the Deck" called self.cards.
+#This deck should be able to get shuffled, thats why we imported random.
+#Show deck test to see if it worked
+#
 class Deck:
     def __init__(self):
         self.cards = []
