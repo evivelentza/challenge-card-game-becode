@@ -1,4 +1,5 @@
 import random
+from utils.player import Player
 
 class Symbol:
     def __init__(self, color: str, icon):
@@ -23,13 +24,20 @@ class Deck:
             for value in values:
                 card = Card(color[i], icons[i], value)
                 self.cards.append(card)
-
+    
     def shuffle(self):
         random.shuffle(self.cards)
     
     def show_deck(self):
         for card in self.cards:
             print(f"{card.value} of {card.icon} ({card.color})")
+    
+
+    def distribute_cards(self, player = List:[Player]):
+        card_for_player = random.choice(self_cards)
+        self_cards.remove(card_for_player)
+
+
 
 deck = Deck()
 deck.fill_deck()
