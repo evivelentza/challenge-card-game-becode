@@ -1,5 +1,6 @@
 from utils.game import Board
 from utils.player import Player
+from utils.deck import Deck
 
 deck = Deck()
 deck.fill_deck()
