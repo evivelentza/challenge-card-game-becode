@@ -1,6 +1,7 @@
 
 import random
 from utils.player import Player
+from utils.card import Card
 class Deck:
     def __init__(self):
         self.cards = []
