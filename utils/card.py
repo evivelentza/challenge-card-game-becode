@@ -40,9 +40,3 @@ class Deck:
                    card_to_give = self.cards.pop()
                    player.cards.append(card_to_give)
 
-
-deck = Deck()
-deck.fill_deck()
-deck.show_deck()for i in range(4):
-            player = Player(name=f"Player {i+1}")
-            self.players.append(player)
